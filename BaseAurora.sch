@@ -1,0 +1,291 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F0:STM32F030C8Tx U?
+U 1 1 62226ED3
+P 5150 3800
+F 0 "U?" H 5150 2111 50  0000 C CNN
+F 1 "STM32F030C8Tx" H 5150 2020 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4650 2300 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf" H 5150 3800 50  0001 C CNN
+	1    5150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell Vcc
+U 1 1 6222DB4B
+P 1950 4200
+F 0 "Vcc" H 2068 4296 50  0000 L CNN
+F 1 "Battery_Cell" H 2068 4205 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_2466_1xAAA" V 1950 4260 50  0001 C CNN
+F 3 "~" V 1950 4260 50  0001 C CNN
+	1    1950 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:KA78M05_TO252 U?
+U 1 1 622320EC
+P 1950 3400
+F 0 "U?" V 1996 3505 50  0000 L CNN
+F 1 "KA78M05_TO252" V 1905 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 1950 3625 50  0001 C CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MC78M00-D.PDF" H 1950 3350 50  0001 C CNN
+	1    1950 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C Cin
+U 1 1 62233A5C
+P 2100 3850
+F 0 "Cin" V 1848 3850 50  0000 C CNN
+F 1 "1μF C" V 1939 3850 50  0000 C CNN
+F 2 "" H 2138 3700 50  0001 C CNN
+F 3 "~" H 2100 3850 50  0001 C CNN
+	1    2100 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 3700 1950 3850
+Wire Wire Line
+	1950 4000 1950 3850
+Connection ~ 1950 3850
+$Comp
+L power:GND #PWR0101
+U 1 1 62236A37
+P 2250 3400
+F 0 "#PWR0101" H 2250 3150 50  0001 C CNN
+F 1 "GND" V 2255 3272 50  0000 R CNN
+F 2 "" H 2250 3400 50  0001 C CNN
+F 3 "" H 2250 3400 50  0001 C CNN
+	1    2250 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 62236EF0
+P 2250 3850
+F 0 "#PWR0102" H 2250 3600 50  0001 C CNN
+F 1 "GND" V 2255 3722 50  0000 R CNN
+F 2 "" H 2250 3850 50  0001 C CNN
+F 3 "" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 622378E8
+P 1950 4300
+F 0 "#PWR0103" H 1950 4050 50  0001 C CNN
+F 1 "GND" H 1955 4127 50  0000 C CNN
+F 2 "" H 1950 4300 50  0001 C CNN
+F 3 "" H 1950 4300 50  0001 C CNN
+	1    1950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:KA78M05_TO252 U?
+U 1 1 6223A49C
+P 1950 3400
+F 0 "U?" V 1996 3505 50  0000 L CNN
+F 1 "KA78M05_TO252" V 1905 3505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 1950 3625 50  0001 C CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MC78M00-D.PDF" H 1950 3350 50  0001 C CNN
+	1    1950 3400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1950 3700
+Connection ~ 2250 3400
+$Comp
+L Device:C Cout
+U 1 1 6223CDA5
+P 2100 2950
+F 0 "Cout" V 1848 2950 50  0000 C CNN
+F 1 "1μF C" V 1939 2950 50  0000 C CNN
+F 2 "" H 2138 2800 50  0001 C CNN
+F 3 "~" H 2100 2950 50  0001 C CNN
+	1    2100 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6223CDAB
+P 2250 2950
+F 0 "#PWR0104" H 2250 2700 50  0001 C CNN
+F 1 "GND" V 2255 2822 50  0000 R CNN
+F 2 "" H 2250 2950 50  0001 C CNN
+F 3 "" H 2250 2950 50  0001 C CNN
+	1    2250 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 3100 1950 2950
+Connection ~ 1950 3100
+Text Label 1950 2950 0    50   ~ 0
+Vcc
+$Comp
+L Isolator:PC817 U?
+U 1 1 6223F545
+P 7650 2700
+F 0 "U?" H 7650 3025 50  0000 C CNN
+F 1 "PC817" H 7650 2934 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 7450 2500 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 7650 2700 50  0001 L CNN
+	1    7650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 62241170
+P 6900 2800
+F 0 "D?" H 6893 3017 50  0000 C CNN
+F 1 "LED" H 6893 2926 50  0000 C CNN
+F 2 "" H 6900 2800 50  0001 C CNN
+F 3 "~" H 6900 2800 50  0001 C CNN
+	1    6900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2800 7050 2800
+$Comp
+L Device:R R?
+U 1 1 622425FA
+P 7100 2200
+F 0 "R?" H 7170 2246 50  0000 L CNN
+F 1 "R" H 7170 2155 50  0000 L CNN
+F 2 "" V 7030 2200 50  0001 C CNN
+F 3 "~" H 7100 2200 50  0001 C CNN
+	1    7100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2600 7100 2600
+Wire Wire Line
+	7100 2600 7100 2350
+$Comp
+L power:GND #PWR?
+U 1 1 6224339E
+P 6750 2800
+F 0 "#PWR?" H 6750 2550 50  0001 C CNN
+F 1 "GND" V 6755 2672 50  0000 R CNN
+F 2 "" H 6750 2800 50  0001 C CNN
+F 3 "" H 6750 2800 50  0001 C CNN
+	1    6750 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 622439BC
+P 8250 2800
+F 0 "R?" V 8043 2800 50  0000 C CNN
+F 1 "R" V 8134 2800 50  0000 C CNN
+F 2 "" V 8180 2800 50  0001 C CNN
+F 3 "~" H 8250 2800 50  0001 C CNN
+	1    8250 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 2800 8100 2800
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 622454B5
+P 8600 2800
+F 0 "Q?" H 8790 2846 50  0000 L CNN
+F 1 "2N2219" H 8790 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 8800 2725 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 8600 2800 50  0001 L CNN
+	1    8600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6224667F
+P 8700 3000
+F 0 "#PWR?" H 8700 2750 50  0001 C CNN
+F 1 "GND" H 8705 2827 50  0000 C CNN
+F 2 "" H 8700 3000 50  0001 C CNN
+F 3 "" H 8700 3000 50  0001 C CNN
+	1    8700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:ADW11 K?
+U 1 1 622475D9
+P 9400 1950
+F 0 "K?" V 8833 1950 50  0000 C CNN
+F 1 "ADW11" V 8924 1950 50  0000 C CNN
+F 2 "Relay_THT:Relay_1P1T_NO_10x24x18.8mm_Panasonic_ADW11xxxxW_THT" H 10725 1900 50  0001 C CNN
+F 3 "https://www.panasonic-electric-works.com/pew/es/downloads/ds_dw_hl_en.pdf" H 9400 1950 50  0001 C CNN
+	1    9400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6224B517
+P 7950 2250
+F 0 "#PWR?" H 7950 2100 50  0001 C CNN
+F 1 "VCC" H 7965 2423 50  0000 C CNN
+F 2 "" H 7950 2250 50  0001 C CNN
+F 3 "" H 7950 2250 50  0001 C CNN
+	1    7950 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 2250 7950 2600
+Wire Wire Line
+	7950 2250 7950 1650
+Connection ~ 7950 2250
+$Comp
+L pspice:DIODE D?
+U 1 1 6224CEA9
+P 8700 2000
+F 0 "D?" V 8746 1872 50  0000 R CNN
+F 1 "DIODE" V 8655 1872 50  0000 R CNN
+F 2 "" H 8700 2000 50  0001 C CNN
+F 3 "~" H 8700 2000 50  0001 C CNN
+	1    8700 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 2250 8700 2250
+Wire Wire Line
+	8700 2250 8700 2200
+Wire Wire Line
+	8700 1800 8700 1650
+Connection ~ 8700 1650
+Wire Wire Line
+	8700 1650 9200 1650
+Wire Wire Line
+	7950 1650 8700 1650
+Wire Wire Line
+	8700 2250 8700 2600
+Connection ~ 8700 2250
+Text Notes 10150 1600 0    50   ~ 0
+Circuito Niquel-cromo
+Wire Notes Line
+	10050 1450 11050 1450
+Wire Notes Line
+	11050 1450 11050 2250
+Wire Notes Line
+	11050 2250 10050 2250
+Wire Notes Line
+	10050 2250 10050 1450
+Wire Wire Line
+	9700 1650 10200 1650
+Wire Wire Line
+	9600 2250 10250 2250
+Wire Wire Line
+	10250 2250 10250 2150
+$EndSCHEMATC
