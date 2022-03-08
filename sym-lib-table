@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name LoRA)(type Legacy)(uri "/home/gustavo/Área de Trabalho/Unicamp/Antares/KiCad/teste/BaseAurora/lib/E32-xxxT20D.lib")(options "")(descr ""))
+  (lib (name BaseAurora)(type Legacy)(uri ${KIPRJMOD}/BaseAurora.lib)(options "")(descr ""))
+)
