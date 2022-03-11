@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Base de acionamento - Aurora"
-Date "2022-03-09"
+Date "2022-03-11"
 Rev ""
 Comp "Equipe Antares UNICAMP"
 Comment1 "Supervisor: Lucas Perissinotto"
@@ -13,74 +13,63 @@ Comment2 "Autor: Gustavo de Souza dos Reis"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:LED D?
-U 1 1 62241170
-P 9500 1950
-F 0 "D?" H 9500 1700 50  0000 C CNN
-F 1 "Red" H 9500 1800 50  0000 C CNN
-F 2 "" H 9500 1950 50  0001 C CNN
-F 3 "~" H 9500 1950 50  0001 C CNN
-	1    9500 1950
-	1    0    0    1   
-$EndComp
 Wire Wire Line
-	9900 4000 9900 3500
+	6950 1650 6450 1650
 Wire Wire Line
-	9900 3500 9550 3500
-Text GLabel 4700 3650 0    50   Input ~ 0
+	6450 1650 6450 2000
+Text GLabel 5250 4450 0    50   Input ~ 0
 LedAlimentacao
 Text GLabel 3350 2300 1    50   Input ~ 0
 LedAlimentacao
-Text GLabel 4700 3750 0    50   Input ~ 0
+Text GLabel 5250 4550 0    50   Input ~ 0
 LedErro
 Text GLabel 2800 2300 1    50   Input ~ 0
 LedErro
-Text GLabel 6300 3350 2    50   Input ~ 0
+Text GLabel 6850 4850 2    50   Input ~ 0
 LedAcionamento
 $Comp
 L power:GND #PWR0101
 U 1 1 6226F2EB
-P 4700 4650
-F 0 "#PWR0101" H 4700 4400 50  0001 C CNN
-F 1 "GND" V 4705 4522 50  0000 R CNN
-F 2 "" H 4700 4650 50  0001 C CNN
-F 3 "" H 4700 4650 50  0001 C CNN
-	1    4700 4650
+P 5250 5450
+F 0 "#PWR0101" H 5250 5200 50  0001 C CNN
+F 1 "GND" V 5255 5322 50  0000 R CNN
+F 2 "" H 5250 5450 50  0001 C CNN
+F 3 "" H 5250 5450 50  0001 C CNN
+	1    5250 5450
 	0    1    1    0   
 $EndComp
 $Comp
 L LoRA:E32-915T20D U?
 U 1 1 6225D7FA
-P 4750 6700
-F 0 "U?" H 5175 6955 50  0000 C CNN
-F 1 "E32-915T20D" H 5175 6864 50  0000 C CNN
-F 2 "" H 4750 6700 50  0001 C CNN
-F 3 "http://www.ebyte.com/en/downpdf.aspx?id=108" H 5175 6773 50  0000 C CNN
-	1    4750 6700
+P 4600 6900
+F 0 "U?" H 5025 7155 50  0000 C CNN
+F 1 "E32-915T20D" H 5025 7064 50  0000 C CNN
+F 2 "" H 4600 6900 50  0001 C CNN
+F 3 "http://www.ebyte.com/en/downpdf.aspx?id=108" H 5025 6973 50  0000 C CNN
+	1    4600 6900
 	1    0    0    -1  
 $EndComp
-Text GLabel 4650 7000 0    50   Input ~ 0
+Text GLabel 4500 7200 0    50   Input ~ 0
 InputLora
-Text GLabel 6300 4550 2    50   Input ~ 0
+Text GLabel 6850 5350 2    50   Input ~ 0
 InputLora
-Text GLabel 4650 7100 0    50   Input ~ 0
+Text GLabel 4500 7300 0    50   Input ~ 0
 OutputLora
-Text GLabel 6300 4450 2    50   Input ~ 0
+Text GLabel 6850 5250 2    50   Input ~ 0
 OutputLora
-Text GLabel 4650 7200 0    50   Input ~ 0
+Text GLabel 4500 7400 0    50   Input ~ 0
 StatusLora
-Text GLabel 6300 4350 2    50   Input ~ 0
+Text GLabel 6850 5150 2    50   Input ~ 0
 StatusLora
-Text GLabel 4650 6800 0    50   Input ~ 0
+Text GLabel 4500 7000 0    50   Input ~ 0
 M0Lora
-Text GLabel 4650 6900 0    50   Input ~ 0
+Text GLabel 4500 7100 0    50   Input ~ 0
 M1Lora
-Text GLabel 6300 4150 2    50   Input ~ 0
+Text GLabel 6850 4950 2    50   Input ~ 0
 M0Lora
-Text GLabel 6300 4250 2    50   Input ~ 0
+Text GLabel 6850 5050 2    50   Input ~ 0
 M1Lora
-Text GLabel 6300 4050 2    50   Input ~ 0
+Text GLabel 6850 4150 2    50   Input ~ 0
 NiCr
 $Comp
 L Connector:Screw_Terminal_01x02 J?
@@ -279,81 +268,81 @@ F 3 "~" H 6200 7200 50  0001 C CNN
 $EndComp
 Text GLabel 6000 7200 0    50   Input ~ 0
 VLora
-Text GLabel 4650 7300 0    50   Input ~ 0
+Text GLabel 4500 7500 0    50   Input ~ 0
 VLora
 $Comp
 L power:GND #PWR0109
 U 1 1 622BE777
-P 4650 7400
-F 0 "#PWR0109" H 4650 7150 50  0001 C CNN
-F 1 "GND" V 4655 7272 50  0000 R CNN
-F 2 "" H 4650 7400 50  0001 C CNN
-F 3 "" H 4650 7400 50  0001 C CNN
-	1    4650 7400
+P 4500 7600
+F 0 "#PWR0109" H 4500 7350 50  0001 C CNN
+F 1 "GND" V 4505 7472 50  0000 R CNN
+F 2 "" H 4500 7600 50  0001 C CNN
+F 3 "" H 4500 7600 50  0001 C CNN
+	1    4500 7600
 	0    1    1    0   
 $EndComp
 $Comp
 L MCU_ESP82:NodeMCU1.0(ESP-12E) U?
 U 1 1 622BF832
-P 5500 4050
-F 0 "U?" H 5500 5137 60  0000 C CNN
-F 1 "NodeMCU1.0(ESP-12E)" H 5500 5031 60  0000 C CNN
-F 2 "" H 4900 3200 60  0000 C CNN
-F 3 "" H 4900 3200 60  0000 C CNN
-	1    5500 4050
+P 6050 4850
+F 0 "U?" H 6050 5937 60  0000 C CNN
+F 1 "NodeMCU1.0(ESP-12E)" H 6050 5831 60  0000 C CNN
+F 2 "" H 5450 4000 60  0000 C CNN
+F 3 "" H 5450 4000 60  0000 C CNN
+	1    6050 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 622C6F91
-P 9350 3000
-F 0 "R?" H 9450 2850 50  0000 C CNN
-F 1 "330" H 9500 2950 50  0000 C CNN
-F 2 "" H 9350 3000 50  0001 C CNN
-F 3 "~" H 9350 3000 50  0001 C CNN
-	1    9350 3000
-	-1   0    0    1   
+P 5600 2200
+F 0 "R?" V 5550 2000 50  0000 C CNN
+F 1 "330" V 5650 2000 50  0000 C CNN
+F 2 "" H 5600 2200 50  0001 C CNN
+F 3 "~" H 5600 2200 50  0001 C CNN
+	1    5600 2200
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 622C7D30
-P 9100 3300
-F 0 "R?" H 9000 3350 50  0000 R CNN
-F 1 "10K" H 9000 3250 50  0000 R CNN
-F 2 "" H 9100 3300 50  0001 C CNN
-F 3 "~" H 9100 3300 50  0001 C CNN
-	1    9100 3300
+P 6150 2300
+F 0 "R?" H 6050 2350 50  0000 R CNN
+F 1 "10K" H 6050 2250 50  0000 R CNN
+F 2 "" H 6150 2300 50  0001 C CNN
+F 3 "~" H 6150 2300 50  0001 C CNN
+	1    6150 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 622CA644
-P 9850 1850
-F 0 "R?" H 9750 1800 50  0000 R CNN
-F 1 "75" H 9750 1900 50  0000 R CNN
-F 2 "" H 9850 1850 50  0001 C CNN
-F 3 "~" H 9850 1850 50  0001 C CNN
-	1    9850 1850
-	-1   0    0    1   
+P 4800 1700
+F 0 "R?" V 4600 1750 50  0000 R CNN
+F 1 "75" V 4700 1750 50  0000 R CNN
+F 2 "" H 4800 1700 50  0001 C CNN
+F 3 "~" H 4800 1700 50  0001 C CNN
+	1    4800 1700
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:D_Small D?
 U 1 1 622CB521
-P 10200 3500
-F 0 "D?" H 10150 3300 50  0000 L CNN
-F 1 "1N4148" H 10050 3400 50  0000 L CNN
-F 2 "" V 10200 3500 50  0001 C CNN
-F 3 "~" V 10200 3500 50  0001 C CNN
-	1    10200 3500
-	-1   0    0    1   
+P 6450 1350
+F 0 "D?" V 6550 1150 50  0000 L CNN
+F 1 "1N4148" V 6650 1050 50  0000 L CNN
+F 2 "" V 6450 1350 50  0001 C CNN
+F 3 "~" V 6450 1350 50  0001 C CNN
+	1    6450 1350
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10100 3500 9900 3500
-Connection ~ 9900 3500
+	6450 1450 6450 1650
+Connection ~ 6450 1650
 Wire Wire Line
-	10500 3500 10300 3500
+	6450 1050 6450 1250
 Wire Wire Line
-	10500 3500 10500 4000
+	6450 1050 6950 1050
 $Comp
 L Device:Polyfuse_Small F?
 U 1 1 622CDA69
@@ -390,9 +379,9 @@ F 3 "~" H 900 2300 50  0001 C CNN
 $EndComp
 Text GLabel 1300 2300 2    50   Input ~ 0
 ADC
-Text GLabel 4700 3350 0    50   Input ~ 0
+Text GLabel 5250 4150 0    50   Input ~ 0
 ADC
-Text GLabel 4700 4750 0    50   Input ~ 0
+Text GLabel 5250 5550 0    50   Input ~ 0
 3V3
 $Comp
 L Device:LED_Small D?
@@ -490,9 +479,9 @@ F 3 "" H 1850 6400 50  0001 C CNN
 	1    1850 6400
 	1    0    0    -1  
 $EndComp
-Text GLabel 6300 3450 2    50   Input ~ 0
+Text GLabel 6850 4250 2    50   Input ~ 0
 SCL_MASTER
-Text GLabel 6300 3550 2    50   Input ~ 0
+Text GLabel 6850 4350 2    50   Input ~ 0
 SDA_MASTER
 $Comp
 L Connector:Conn_01x04_Male J?
@@ -558,32 +547,32 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 6229B5E0
-P 7000 3650
-F 0 "R?" V 6804 3650 50  0000 C CNN
-F 1 "470" V 6900 3650 50  0000 C CNN
-F 2 "" H 7000 3650 50  0001 C CNN
-F 3 "~" H 7000 3650 50  0001 C CNN
-	1    7000 3650
+P 7550 4450
+F 0 "R?" V 7354 4450 50  0000 C CNN
+F 1 "470" V 7450 4450 50  0000 C CNN
+F 2 "" H 7550 4450 50  0001 C CNN
+F 3 "~" H 7550 4450 50  0001 C CNN
+	1    7550 4450
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 6229C4DE
-P 7000 3750
-F 0 "R?" V 6800 3750 50  0000 C CNN
-F 1 "470" V 6900 3750 50  0000 C CNN
-F 2 "" H 7000 3750 50  0001 C CNN
-F 3 "~" H 7000 3750 50  0001 C CNN
-	1    7000 3750
+P 7550 4550
+F 0 "R?" V 7350 4550 50  0000 C CNN
+F 1 "470" V 7450 4550 50  0000 C CNN
+F 2 "" H 7550 4550 50  0001 C CNN
+F 3 "~" H 7550 4550 50  0001 C CNN
+	1    7550 4550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6300 3650 6900 3650
+	6850 4450 7450 4450
 Wire Wire Line
-	6300 3750 6900 3750
-Text GLabel 7100 3650 2    50   Input ~ 0
+	6850 4550 7450 4550
+Text GLabel 7650 4450 2    50   Input ~ 0
 DIO1
-Text GLabel 7100 3750 2    50   Input ~ 0
+Text GLabel 7650 4550 2    50   Input ~ 0
 DIO2
 $Comp
 L Connector:Conn_01x04_Male J?
@@ -616,169 +605,165 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 622A590C
-P 10300 5250
-F 0 "J?" V 10450 5150 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" V 10550 4800 50  0000 L CNN
-F 2 "" H 10300 5250 50  0001 C CNN
-F 3 "~" H 10300 5250 50  0001 C CNN
-	1    10300 5250
-	0    1    1    0   
+P 8200 1250
+F 0 "J?" V 8350 1150 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" V 8450 800 50  0000 L CNN
+F 2 "" H 8200 1250 50  0001 C CNN
+F 3 "~" H 8200 1250 50  0001 C CNN
+	1    8200 1250
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 4400 9900 5050
+	7350 1650 8000 1650
 Wire Wire Line
-	9900 5050 10200 5050
+	8000 1650 8000 1350
 $Comp
 L Device:Fuse F?
 U 1 1 622AA3E7
-P 10500 4850
-F 0 "F?" H 10350 4850 50  0000 C CNN
-F 1 "Fuse" H 10350 4950 50  0000 C CNN
-F 2 "" V 10430 4850 50  0001 C CNN
-F 3 "~" H 10500 4850 50  0001 C CNN
-	1    10500 4850
-	-1   0    0    1   
+P 7800 1050
+F 0 "F?" V 7600 1050 50  0000 C CNN
+F 1 "Fuse" V 7700 1050 50  0000 C CNN
+F 2 "" V 7730 1050 50  0001 C CNN
+F 3 "~" H 7800 1050 50  0001 C CNN
+	1    7800 1050
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10500 4500 10500 4700
+	7450 1050 7650 1050
 Wire Wire Line
-	10500 5000 10500 5050
+	7950 1050 8000 1050
 Wire Wire Line
-	10500 5050 10300 5050
+	8000 1050 8000 1250
 $Comp
 L Transistor_BJT:PN2222A Q?
 U 1 1 622AD80F
-P 9350 3400
-F 0 "Q?" V 9600 3350 50  0000 L CNN
-F 1 "PN2222A" V 9700 3250 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9550 3325 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 9350 3400 50  0001 L CNN
-	1    9350 3400
-	0    1    1    0   
+P 6350 2200
+F 0 "Q?" H 6700 2350 50  0000 L CNN
+F 1 "PN2222A" H 6600 2200 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6550 2125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 6350 2200 50  0001 L CNN
+	1    6350 2200
+	1    0    0    -1  
 $EndComp
-Text GLabel 10200 1900 1    50   Input ~ 0
+Text GLabel 4850 1350 0    50   Input ~ 0
 NiCr
 Wire Wire Line
-	10400 2550 10500 2550
+	5500 1150 5500 1050
 $Comp
 L Relay:G5V-1 K?
 U 1 1 622C6182
-P 10200 4200
-F 0 "K?" H 10150 3650 50  0000 L CNN
-F 1 "HK4100F-DC3V-SHG" H 9800 3800 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron_G5V-1" H 11330 4170 50  0001 C CNN
-F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" H 10200 4200 50  0001 C CNN
-	1    10200 4200
-	0    1    1    0   
+P 7150 1350
+F 0 "K?" H 7100 800 50  0000 L CNN
+F 1 "HK4100F-DC3V-SHG" H 6750 950 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_Omron_G5V-1" H 8280 1320 50  0001 C CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" H 7150 1350 50  0001 C CNN
+	1    7150 1350
+	1    0    0    -1  
 $EndComp
-Text GLabel 10500 3500 2    50   Input ~ 0
+Text GLabel 6450 1050 1    50   Input ~ 0
 3V3
 $Comp
 L power:GND #PWR0116
 U 1 1 622C90D7
-P 9100 3500
-F 0 "#PWR0116" H 9100 3250 50  0001 C CNN
-F 1 "GND" H 9150 3350 50  0000 R CNN
-F 2 "" H 9100 3500 50  0001 C CNN
-F 3 "" H 9100 3500 50  0001 C CNN
-	1    9100 3500
+P 6450 2450
+F 0 "#PWR0116" H 6450 2200 50  0001 C CNN
+F 1 "GND" H 6500 2300 50  0000 R CNN
+F 2 "" H 6450 2450 50  0001 C CNN
+F 3 "" H 6450 2450 50  0001 C CNN
+	1    6450 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 622CA082
-P 9750 2900
-F 0 "J?" V 9700 2900 50  0000 R CNN
-F 1 "Header_1x2" V 9600 3050 50  0000 R CNN
-F 2 "" H 9750 2900 50  0001 C CNN
-F 3 "~" H 9750 2900 50  0001 C CNN
-	1    9750 2900
-	0    1    -1   0   
+P 5850 1800
+F 0 "J?" H 5700 1750 50  0000 R CNN
+F 1 "Header_1x2" H 5800 1650 50  0000 R CNN
+F 2 "" H 5850 1800 50  0001 C CNN
+F 3 "~" H 5850 1800 50  0001 C CNN
+	1    5850 1800
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 3100 9350 3200
-Wire Wire Line
-	10500 2550 10500 3500
-Connection ~ 10500 3500
+	5500 1050 6450 1050
+Connection ~ 6450 1050
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 622D3BB9
-P 10250 2900
-F 0 "J?" V 10200 2900 50  0000 R CNN
-F 1 "Header_1x2" V 10100 3050 50  0000 R CNN
-F 2 "" H 10250 2900 50  0001 C CNN
-F 3 "~" H 10250 2900 50  0001 C CNN
-	1    10250 2900
-	0    1    -1   0   
+P 5850 1300
+F 0 "J?" H 5700 1300 50  0000 R CNN
+F 1 "Header_1x2" H 5850 1400 50  0000 R CNN
+F 2 "" H 5850 1300 50  0001 C CNN
+F 3 "~" H 5850 1300 50  0001 C CNN
+	1    5850 1300
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 2550 9650 2700
+	5500 1900 5650 1900
 Wire Wire Line
-	10400 2550 10400 2700
+	5500 1150 5650 1150
 Wire Wire Line
-	10400 2700 10250 2700
-Connection ~ 10400 2550
+	5650 1150 5650 1300
+Connection ~ 5500 1150
 Wire Wire Line
-	10000 2550 10000 2650
+	5500 1550 5600 1550
 Wire Wire Line
-	10000 2700 10150 2700
-Text GLabel 9850 1750 1    50   Input ~ 0
+	5650 1550 5650 1400
+Text GLabel 4700 1700 0    50   Input ~ 0
 NiCr_ISO
 Wire Wire Line
-	9650 2550 9350 2550
-Wire Wire Line
-	9350 2550 9350 2900
-Text Notes 8650 4700 0    50   ~ 0
+	5500 1900 5500 2200
+Text Notes 9650 1650 2    50   ~ 0
 Coil voltage: 3V\nCoil current: 67 mA (SHG)\nCoil power: 0.20 W  (SHG)
-Text Notes 8000 3950 0    50   ~ 0
+Text Notes 8150 2550 2    50   ~ 0
 Ic = 67 mA\nVce (Sat) ≃ 50 mV\nIb = Ic/10 = 6.7 mA\nVbe ≃ 0.8 V\nRb = (3.3-Vbe)/Ib = 373 Ohms (330)
 $Comp
 L Device:R_Small R?
 U 1 1 622DA12E
-P 10200 2000
-F 0 "R?" H 10050 1950 50  0000 C CNN
-F 1 "3.3K" H 10050 2050 50  0000 C CNN
-F 2 "" H 10200 2000 50  0001 C CNN
-F 3 "~" H 10200 2000 50  0001 C CNN
-	1    10200 2000
-	-1   0    0    1   
+P 4950 1350
+F 0 "R?" V 4750 1350 50  0000 C CNN
+F 1 "3.3K" V 4850 1350 50  0000 C CNN
+F 2 "" H 4950 1350 50  0001 C CNN
+F 3 "~" H 4950 1350 50  0001 C CNN
+	1    4950 1350
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10200 2250 10200 2100
-Connection ~ 9650 2550
-Connection ~ 10000 2650
+	5200 1350 5050 1350
+Connection ~ 5500 1900
+Connection ~ 5600 1550
 Wire Wire Line
-	10000 2650 10000 2700
+	5600 1550 5650 1550
 Wire Wire Line
-	10000 2650 9750 2650
+	5600 1550 5600 1800
 Wire Wire Line
-	9750 2550 9750 2650
-Connection ~ 9750 2650
+	5500 1800 5600 1800
+Connection ~ 5600 1800
 Wire Wire Line
-	9750 2650 9750 2700
+	5600 1800 5650 1800
 $Comp
 L Isolator:4N25 U?
 U 1 1 622DCA70
-P 9750 2250
-F 0 "U?" H 9750 2575 50  0000 C CNN
-F 1 "4N32M" H 9750 2484 50  0000 C CNN
-F 2 "Package_DIP:DIP-6_W7.62mm" H 9550 2050 50  0001 L CIN
-F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 9750 2250 50  0001 L CNN
-	1    9750 2250
-	0    1    1    0   
+P 5200 1800
+F 0 "U?" H 5200 2125 50  0000 C CNN
+F 1 "4N32M" H 5200 2034 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 5000 1600 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 5200 1800 50  0001 L CNN
+	1    5200 1800
+	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:2N3906 Q?
 U 1 1 622B3DFD
-P 10200 2450
-F 0 "Q?" V 10050 2100 50  0000 L CNN
-F 1 "2N3906" V 10150 2000 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10400 2375 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 10200 2450 50  0001 L CNN
-	1    10200 2450
-	0    -1   1    0   
+P 5400 1350
+F 0 "Q?" H 5300 1100 50  0000 L CNN
+F 1 "2N3906" H 5150 1200 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5600 1275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 5400 1350 50  0001 L CNN
+	1    5400 1350
+	1    0    0    1   
 $EndComp
-Text Notes 7850 2250 0    50   ~ 0
+Text Notes 5900 2850 2    50   ~ 0
 Vin (NiCr_ISO) = 5V\nV_LED (red) = 2V@20mA\nV_OPTO (led) = 1.25V@20mA\nRin = (Vin-V_LED-V_OPTO)/20mA \nRin = 87.5 Ohms (75)
 Text GLabel 800  2300 0    50   Input ~ 0
 Vbat
@@ -824,19 +809,19 @@ F 3 "~" H 900 7250 50  0001 C CNN
 $EndComp
 Text GLabel 1100 7050 2    50   Input ~ 0
 MOSI
-Text GLabel 4700 3850 0    50   Input ~ 0
+Text GLabel 5250 4650 0    50   Input ~ 0
 MOSI
 Text GLabel 1100 7150 2    50   Input ~ 0
 CS
-Text GLabel 4700 3950 0    50   Input ~ 0
+Text GLabel 5250 4750 0    50   Input ~ 0
 CS
 Text GLabel 1100 7250 2    50   Input ~ 0
 MISO
-Text GLabel 4700 4050 0    50   Input ~ 0
+Text GLabel 5250 4850 0    50   Input ~ 0
 MISO
 Text GLabel 1100 7350 2    50   Input ~ 0
 SCLK
-Text GLabel 4700 4150 0    50   Input ~ 0
+Text GLabel 5250 4950 0    50   Input ~ 0
 SCLK
 $Comp
 L power:GND #PWR0118
@@ -849,46 +834,46 @@ F 3 "" H 1100 7300 50  0001 C CNN
 	1    1100 7300
 	1    0    0    -1  
 $EndComp
-Text GLabel 4700 4350 0    50   Input ~ 0
+Text GLabel 5250 5150 0    50   Input ~ 0
 3V3
-Text GLabel 6300 4750 2    50   Input ~ 0
+Text GLabel 6850 5550 2    50   Input ~ 0
 3V3
-Text GLabel 6300 3850 2    50   Input ~ 0
+Text GLabel 6850 4650 2    50   Input ~ 0
 3V3
 $Comp
 L power:GND #PWR0119
 U 1 1 622EBABF
-P 4700 4250
-F 0 "#PWR0119" H 4700 4000 50  0001 C CNN
-F 1 "GND" V 4705 4122 50  0000 R CNN
-F 2 "" H 4700 4250 50  0001 C CNN
-F 3 "" H 4700 4250 50  0001 C CNN
-	1    4700 4250
+P 5250 5050
+F 0 "#PWR0119" H 5250 4800 50  0001 C CNN
+F 1 "GND" V 5255 4922 50  0000 R CNN
+F 2 "" H 5250 5050 50  0001 C CNN
+F 3 "" H 5250 5050 50  0001 C CNN
+	1    5250 5050
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 622EC08F
-P 6300 4650
-F 0 "#PWR0120" H 6300 4400 50  0001 C CNN
-F 1 "GND" V 6305 4522 50  0000 R CNN
-F 2 "" H 6300 4650 50  0001 C CNN
-F 3 "" H 6300 4650 50  0001 C CNN
-	1    6300 4650
+P 6850 5450
+F 0 "#PWR0120" H 6850 5200 50  0001 C CNN
+F 1 "GND" V 6855 5322 50  0000 R CNN
+F 2 "" H 6850 5450 50  0001 C CNN
+F 3 "" H 6850 5450 50  0001 C CNN
+	1    6850 5450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 622EC64C
-P 6300 3950
-F 0 "#PWR0121" H 6300 3700 50  0001 C CNN
-F 1 "GND" V 6305 3822 50  0000 R CNN
-F 2 "" H 6300 3950 50  0001 C CNN
-F 3 "" H 6300 3950 50  0001 C CNN
-	1    6300 3950
+P 6850 4750
+F 0 "#PWR0121" H 6850 4500 50  0001 C CNN
+F 1 "GND" V 6855 4622 50  0000 R CNN
+F 2 "" H 6850 4750 50  0001 C CNN
+F 3 "" H 6850 4750 50  0001 C CNN
+	1    6850 4750
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9350 1950 3    50   Input ~ 0
+Text GLabel 4900 2100 3    50   Input ~ 0
 GND_ISO
 Wire Wire Line
 	2850 7150 3050 7150
@@ -983,47 +968,19 @@ Text Notes 2550 1550 0    50   ~ 10
 LEDs de indicação\n
 Text Notes 600  2000 0    50   ~ 0
 Ligação da bateria no \nleitor ADC do MCU.\nPossibilita fazer a \nleitura da carga disponível.
-Wire Notes Line
-	3950 7800 3950 5600
-Wire Notes Line
-	3950 5600 6850 5600
-Wire Notes Line
-	6850 5600 6850 7800
-Text Notes 4700 6200 0    50   ~ 0
+Text Notes 4550 6450 0    50   ~ 0
 Módulo LoRA que opera como transceptor.\nA partir do conector é possível selecionar\nalimentação de 5V ou 3V3 para o módulo.
-Wire Notes Line
-	3950 5450 7500 5450
-Wire Notes Line
-	7500 5450 7500 1450
-Wire Notes Line
-	7500 1450 3950 1450
-Wire Notes Line
-	3950 1450 3950 5400
-Text Notes 4600 2050 0    50   ~ 0
-Microcontrolador ESP8266-12E que iráreceber o firmware e \ncoordenar os demais componentes.
+Text Notes 4200 3550 0    50   ~ 0
+Microcontrolador ESP8266-12E que iráreceber o firmware e coordenar os demais componentes.
 Wire Wire Line
-	9100 3200 9350 3200
-Connection ~ 9350 3200
-Wire Wire Line
-	9100 3400 9100 3500
-Wire Wire Line
-	9100 3500 9150 3500
-Connection ~ 9100 3500
-Wire Notes Line
-	7700 6350 11200 6350
-Wire Notes Line
-	11200 6350 11200 450 
-Wire Notes Line
-	11200 500  7700 500 
-Wire Notes Line
-	7700 450  7700 6350
-Text Notes 8250 1350 0    50   ~ 0
-O circuito pode ser acionado de duas formas:\n\n    - Via sinal elétrico externo, acionando o optoacoplador\n    - Via sinal digital interno, acionando o transistor PNP\n\nA forma de acionamento é escolhida colocando um jumper \nno pin header correspondente a entrada que deseja-se omitir.
-Text Notes 8450 650  0    50   ~ 10
+	6450 2450 6450 2400
+Text Notes 8550 1300 0    50   ~ 0
+O circuito pode ser acionado de duas formas:\n    - Via sinal elétrico externo, acionando o optoacoplador\n    - Via sinal digital interno, acionando o transistor PNP\nA forma de acionamento é escolhida colocando um jumper\n no pin header correspondente a entrada que deseja-se omitir.
+Text Notes 7750 750  2    50   ~ 10
 Circuito de acionamento do ignitor de Niquel-Cromo.
-Text Notes 5450 1600 0    50   ~ 10
+Text Notes 5800 3300 0    50   ~ 10
 Microcontrolador
-Text Notes 5200 5800 0    50   ~ 10
+Text Notes 5100 6100 0    50   ~ 10
 Transceiver
 Text Notes 1700 5750 0    50   ~ 10
 Conectores auxiliares
@@ -1033,8 +990,47 @@ Text Notes 1800 4250 0    50   ~ 10
 Alimentação\n
 Text Notes 900  1600 0    50   ~ 10
 Leitor ADC
-NoConn ~ 4700 3450
-NoConn ~ 4700 3550
-NoConn ~ 4700 4450
-NoConn ~ 4700 4550
+NoConn ~ 5250 4250
+NoConn ~ 5250 4350
+NoConn ~ 5250 5250
+NoConn ~ 5250 5350
+Wire Wire Line
+	6450 2450 6150 2450
+Wire Wire Line
+	6150 2450 6150 2400
+Connection ~ 6450 2450
+NoConn ~ 7250 1050
+Wire Wire Line
+	5700 2200 6150 2200
+Connection ~ 6150 2200
+$Comp
+L Device:LED_Small D?
+U 1 1 62311A01
+P 4900 2000
+F 0 "D?" V 4950 2200 50  0000 R CNN
+F 1 "Red" V 4850 2250 50  0000 R CNN
+F 2 "" V 4900 2000 50  0001 C CNN
+F 3 "~" V 4900 2000 50  0001 C CNN
+	1    4900 2000
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5500 1700
+Wire Notes Line
+	3950 450  3950 3000
+Wire Notes Line
+	3950 3000 11250 3000
+Wire Notes Line
+	3950 7800 3950 6000
+Wire Notes Line
+	3950 6000 6900 6000
+Wire Notes Line
+	6900 6000 6900 7800
+Wire Notes Line
+	3950 3100 7950 3100
+Wire Notes Line
+	7950 3100 7950 5900
+Wire Notes Line
+	7950 5900 3950 5900
+Wire Notes Line
+	3950 5900 3950 3100
 $EndSCHEMATC
