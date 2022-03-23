@@ -29,89 +29,89 @@ Pelo fato de o sistema precisar ser personalizado, se ajustando ao sistema prese
 
 ![Esquematico](/Assets/Esquematico.png "Esquematico")
 
-![Layout PCB](/Assets/pcb.pdf "Layout PCB")
+![Layout PCB](/Assets/pcb.png "Layout PCB")
 
 ## Pinagem
 
 ### Pinout conector Screw bateria 18650
 
-    Pino | Sinal
-    -----|------
-      1  | VBat
-      2  | GND
+Pino | Sinal
+-----|------
+1  | VBat
+2  | GND
 
 ### Pinout conector Screw do Acionamento
 
-    Pino | Sinal
-    -----|------
-      1  | NiCr_ISO
-      2  | GND_ISO
+Pino | Sinal
+-----|------
+  1  | NiCr_ISO
+  2  | GND_ISO
 
 ### Pinout conector Screw Alimentação externa
 
-    Pino | Sinal
-    -----|------
-      1  | VExt
-      2  | GND
+Pino | Sinal
+-----|------
+  1  | VExt
+  2  | GND
 
 ### Pinout conector GPIO aux
 
-    Pino | Sinal
-    -----|------
-      1  | DIO1
-      2  | DIO2
-      3  | 3V3
-      4  | GND
+Pino | Sinal
+-----|------
+  1  | DIO1
+  2  | DIO2
+  3  | 3V3
+  4  | GND
 
 ### Pinout conector LoRA aux
 
-    Pino | Sinal
-    -----|------
-      1  | OutputLora
-      2  | InputLora
-      3  | 3V3
-      4  | GND
+Pino | Sinal
+-----|------
+  1  | OutputLora
+  2  | InputLora
+  3  | 3V3
+  4  | GND
 
 ### Pinout conector I2C aux
 
-    Pino | Sinal
-    -----|------
-      1  | SCL_SLAVE
-      2  | SDA_SLAVE
-      3  | 3V3
-      4  | GND
+Pino | Sinal
+-----|------
+  1  | SCL_SLAVE
+  2  | SDA_SLAVE
+  3  | 3V3
+  4  | GND
 
 ### Pinout conector SPI aux
 
-    Pino | Sinal
-    -----|------
-      1  | MOSI
-      2  | CS
-      3  | MISO
-      4  | SCLK
-      5  | GND
+Pino | Sinal
+-----|------
+  1  | MOSI
+  2  | CS
+  3  | MISO
+  4  | SCLK
+  5  | GND
 
 ### Pinout conector de seleção alimentação LoRA
 
-    Pino | Sinal
-    -----|------
-      1  | 3V3
-      2  | VLora
-      3  | VExt
+Pino | Sinal
+-----|------
+  1  | 3V3
+  2  | VLora
+  3  | VExt
 
 ### Pinout conector Transistor PNP acionamento (interno)
 
-    Pino | Sinal
-    -----|------
-      1  | Emissor
-      2  | Coletor
+Pino | Sinal
+-----|------
+  1  | Emissor
+  2  | Coletor
 
 ### Pinout conector Optoacoplador acionamento (externo)
 
-    Pino | Sinal
-    -----|------
-      1  | Coletor
-      2  | Emissor
+Pino | Sinal
+-----|------
+  1  | Coletor
+  2  | Emissor
 
 ## Testes
 
