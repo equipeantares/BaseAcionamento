@@ -16,7 +16,7 @@ void setup(){
   Serial.begin(9600);
 
 
-  while (Serial.readString() != "s"){
+  while (Serial.readString() != "s\n"){
     Serial.println("Comunicacao estabelecida. Digite 's' para iniciar!");
     yield();}
 
